@@ -4,7 +4,7 @@ const nextConfig = {
       adjustFontFallbacks: false,
     },
 
-    
+    target: 'serverless', 
   };
   
   module.exports = nextConfig;
