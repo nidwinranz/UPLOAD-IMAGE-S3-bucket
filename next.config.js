@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    adjustFontFallbacks: false,  // Keep your experimental option here if you need it
-  }, 
-};
+    experimental: {
+      adjustFontFallbacks: false,
+    },
 
-module.exports = nextConfig;
+    
+  };
+  
+  module.exports = nextConfig;
+  
