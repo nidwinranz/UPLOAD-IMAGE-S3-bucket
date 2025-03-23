@@ -35,6 +35,12 @@ const UploadForm = () => {
 
     setFileName(file.name);
 
+    // Restrict uploading the same file name again
+    if (uploadedImages.some((img) => img.includes(file.name))) {
+      alert(`An image with the name "${file.name}" has already been uploaded.`);
+      return;
+    }
+
     const allowedTypes = ["image/jpeg", "image/png", "image/gif"];
     if (!allowedTypes.includes(file.type)) {
       alert("Only JPG, PNG, and GIF files are allowed.");
