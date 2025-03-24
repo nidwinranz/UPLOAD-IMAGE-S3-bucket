@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next-on-pages",
-"deploy": "npx wrangler pages publish .",
+    "deploy": "npx wrangler pages publish .",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.772.0",
     "@fontsource/inter": "^5.2.5",
+    "@next/font": "^14.2.15",
     "@tailwindcss/vite": "^4.0.15",
     "aws-sdk": "^2.1692.0",
     "next": "13.5.6",
