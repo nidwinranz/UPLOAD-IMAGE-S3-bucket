@@ -4,7 +4,7 @@ const nextConfig = {
   experimental: {
     appDir: true, // Optional if you're using the new app directory in Next.js 13+
   },
-  trailingSlash: true, // Optional, but necessary if you're using static hosting
+  distDir: '.output', // Set the output directory to `.output`
 };
 
 module.exports = nextConfig;
