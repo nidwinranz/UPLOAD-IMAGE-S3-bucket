@@ -4,7 +4,8 @@ const nextConfig = {
   experimental: {
     appDir: true, // Optional if you're using the new app directory in Next.js 13+
   },
-  distDir: '.output', // Set the output directory to `.output`
+  distDir: '.output', // Use '.output' for Cloudflare Pages
+  trailingSlash: true, // Optional, but useful for static sites
 };
 
 module.exports = nextConfig;
