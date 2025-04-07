@@ -1,8 +1,6 @@
 name = "upload-image-s3-bucketnew"
-compatibility_date = "2024-04-07"
+type = "javascript"
 
 [build]
-command = "npm run build"
-
-[env.production]
-compatibility_flags = [ "nodejs_compat" ]
+  command = "npm run build"
+  directory = ".output"  # Output directory for Cloudflare Pages
