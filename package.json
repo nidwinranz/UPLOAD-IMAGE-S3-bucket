@@ -4,11 +4,9 @@
   "private": true,
   "scripts": {
   "dev": "next dev",
-  "build": "next build",
-  "export": "next export",  
-  "deploy": "npx wrangler pages publish .output"  
-}
-,
+  "build": "next build && next-on-pages --experimental-minify",
+  "deploy": "wrangler pages deploy .vercel/output/static --project-name=upload-image-s3-bucketnew --branch=main"
+},
   "dependencies": {
     "@aws-sdk/client-s3": "^3.772.0",
     "@fontsource/inter": "^5.2.5",
@@ -20,7 +18,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.10",
+    "@cloudflare/next-on-pages": "^1.13.12",
     "@tailwindcss/postcss": "^4.0.15",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
